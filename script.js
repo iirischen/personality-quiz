@@ -2,9 +2,10 @@
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
 var questionCount = 0;
-var result1Score = 0;
-
-
+var blairScore = 0;
+var serenaScore = 0;
+var nateScore = 0;
+var chuckScore = 0;
 
 
 
