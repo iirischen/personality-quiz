@@ -7,6 +7,24 @@ var serenaScore = 0;
 var danScore = 0;
 var chuckScore = 0;
 
+var result = document.getElementById("result");
+function updateResult(){
+  if (blairScore >= 2){
+    result.innerHTML = "Blair Waldorf!"
+ }
+ else if(serenaScore >=2){
+   result.innerHTML = "Serena van der Woodsen!"
+ }
+ else if(danScore >=2){
+   result.innerHTML = "Dan Humphrey!"
+ }
+ else if (chuckScore>= 2){
+   result.innerHTML = "Chuck Bass!"
+ }
+ else{
+
+ }
+}
 
 
 //#TODO: Use the DOM to create variables for the first quiz question.
@@ -51,8 +69,8 @@ q3a4.addEventListener("click", chuck);
 
 q4a1.addEventListener("click", chuck);
 q4a2.addEventListener("click", blair);
-q4a3.addEventListener("click", blair);
-q4a4.addEventListener("click", chuck);
+q4a3.addEventListener("click", serena);
+q4a4.addEventListener("click", dan);
 
 
 //#TODO: Define quiz functions here
@@ -60,22 +78,30 @@ function blair() {
   blairScore += 1;
   questionCount += 1;
   alert("That's something Blair would do.")
+  if (questionCount >=3){ 
+    updateResult();
 }
 
 function serena() {
   serenaScore += 1;
   questionCount += 1;
   alert("That's something Serena would do.")
+  if (questionCount >=3){ 
+    updateResult();
 }
 
 function dan() {
   danScore += 1;
   questionCount += 1;
   alert("That's something Dan would do.")
+  if (questionCount >=3){ 
+    updateResult();
 }
 
 function chuck() {
   chuckScore += 1;
   questionCount += 1;
   alert("That's something Chuck would do.")
+  if (questionCount >=3){ 
+    updateResult();
 }
