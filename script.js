@@ -36,30 +36,46 @@ var q4a4 = document.getElementById("q4a4");
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", blair);
 q1a2.addEventListener("click", serena);
-q1a2.addEventListener("click", dan);
-q1a2.addEventListener("click", chuck);
+q1a3.addEventListener("click", dan);
+q1a4.addEventListener("click", chuck);
 
+q2a1.addEventListener("click", serena);
+q2a2.addEventListener("click", dan);
+q2a3.addEventListener("click", blair);
+q2a4.addEventListener("click", chuck);
 
+q3a1.addEventListener("click", blair);
+q3a2.addEventListener("click", dan);
+q3a3.addEventListener("click", serena);
+q3a4.addEventListener("click", chuck);
 
+q4a1.addEventListener("click", chuck);
+q4a2.addEventListener("click", blair);
+q4a3.addEventListener("click", blair);
+q4a4.addEventListener("click", chuck);
 
 
 //#TODO: Define quiz functions here
 function blair() {
   blairScore += 1;
   questionCount += 1;
+  alert("That's something Blair would do.")
 }
 
 function serena() {
   serenaScore += 1;
   questionCount += 1;
+  alert("That's something Serena would do.")
 }
 
 function dan() {
-  slytherinScore += 1;
+  danScore += 1;
   questionCount += 1;
+  alert("That's something Dan would do.")
 }
 
-function hufflepuff() {
-  hufflepuffScore += 1;
+function chuck() {
+  chuckScore += 1;
   questionCount += 1;
+  alert("That's something Chuck would do.")
 }
