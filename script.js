@@ -22,7 +22,7 @@ function updateResult(){
    result.innerHTML = "Chuck Bass!"
  }
  else{
-
+   result.innerHTML = "I am having trouble calculating your results. Please try again later!"
  }
 }
 
@@ -74,34 +74,36 @@ q4a4.addEventListener("click", dan);
 
 
 //#TODO: Define quiz functions here
-function blair() {
+function blair(){
   blairScore += 1;
   questionCount += 1;
-  alert("That's something Blair would do.")
+  //alert("That's something Blair would do.")
   if (questionCount >=3){ 
     updateResult();
 }
+}
 
-function serena() {
+function serena(){
   serenaScore += 1;
   questionCount += 1;
-  alert("That's something Serena would do.")
+  //alert("That's something Serena would do.")
   if (questionCount >=3){ 
     updateResult();
 }
-
-function dan() {
+}
+function dan(){
   danScore += 1;
   questionCount += 1;
-  alert("That's something Dan would do.")
+  //alert("That's something Dan would do.")
   if (questionCount >=3){ 
     updateResult();
 }
-
-function chuck() {
+}
+function chuck(){
   chuckScore += 1;
   questionCount += 1;
-  alert("That's something Chuck would do.")
+  //alert("That's something Chuck would do.")
   if (questionCount >=3){ 
     updateResult();
+}
 }
