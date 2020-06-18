@@ -78,7 +78,7 @@ function blair(){
   blairScore += 1;
   questionCount += 1;
   //alert("That's something Blair would do.")
-  if (questionCount >=3){ 
+  if (questionCount >=4){ 
     updateResult();
 }
 }
@@ -87,7 +87,7 @@ function serena(){
   serenaScore += 1;
   questionCount += 1;
   //alert("That's something Serena would do.")
-  if (questionCount >=3){ 
+  if (questionCount >=4){ 
     updateResult();
 }
 }
@@ -95,7 +95,7 @@ function dan(){
   danScore += 1;
   questionCount += 1;
   //alert("That's something Dan would do.")
-  if (questionCount >=3){ 
+  if (questionCount >=4){ 
     updateResult();
 }
 }
@@ -103,7 +103,7 @@ function chuck(){
   chuckScore += 1;
   questionCount += 1;
   //alert("That's something Chuck would do.")
-  if (questionCount >=3){ 
+  if (questionCount >=4){ 
     updateResult();
 }
 }
