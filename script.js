@@ -4,7 +4,7 @@
 var questionCount = 0;
 var blairScore = 0;
 var serenaScore = 0;
-var nateScore = 0;
+var danScore = 0;
 var chuckScore = 0;
 
 
