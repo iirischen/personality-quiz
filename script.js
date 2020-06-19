@@ -9,7 +9,7 @@ var chuckScore = 0;
 
 var result = document.getElementById("result");
 function updateResult(){
-  if (blairScore >= 2){
+  if (blairScore >=2){
     result.innerHTML = "Blair Waldorf!"
  }
  else if(serenaScore >=2){
@@ -18,7 +18,7 @@ function updateResult(){
  else if(danScore >=2){
    result.innerHTML = "Dan Humphrey!"
  }
- else if (chuckScore>= 2){
+ else if (chuckScore>=2){
    result.innerHTML = "Chuck Bass!"
  }
  else{
@@ -48,6 +48,11 @@ var q4a2 = document.getElementById("q4a2");
 var q4a3 = document.getElementById("q4a3");
 var q4a4 = document.getElementById("q4a4");
 
+var q5a1 = document.getElementById("q5a1");
+var q5a2 = document.getElementById("q5a2");
+var q5a3 = document.getElementById("q5a3");
+var q5a4 = document.getElementById("q5a4");
+
 
 
 
@@ -72,13 +77,18 @@ q4a2.addEventListener("click", blair);
 q4a3.addEventListener("click", serena);
 q4a4.addEventListener("click", dan);
 
+q5a1.addEventListener("click", serena);
+q5a2.addEventListener("click", dan);
+q5a3.addEventListener("click", chuck);
+q5a4.addEventListener("click", blair);
+
 
 //#TODO: Define quiz functions here
 function blair(){
   blairScore += 1;
   questionCount += 1;
   //alert("That's something Blair would do.")
-  if (questionCount >=4){ 
+  if (questionCount >=5){ 
     updateResult();
 }
 }
@@ -87,7 +97,7 @@ function serena(){
   serenaScore += 1;
   questionCount += 1;
   //alert("That's something Serena would do.")
-  if (questionCount >=4){ 
+  if (questionCount >=5){ 
     updateResult();
 }
 }
@@ -95,7 +105,7 @@ function dan(){
   danScore += 1;
   questionCount += 1;
   //alert("That's something Dan would do.")
-  if (questionCount >=4){ 
+  if (questionCount >=5){ 
     updateResult();
 }
 }
@@ -103,7 +113,7 @@ function chuck(){
   chuckScore += 1;
   questionCount += 1;
   //alert("That's something Chuck would do.")
-  if (questionCount >=4){ 
+  if (questionCount >=5){ 
     updateResult();
 }
 }

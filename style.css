@@ -3,22 +3,42 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  background-color: #FFFACD;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  color: #00000;
+  font-size: 65px;
+  font-family: 'Londrina Solid', cursive;
 }
 
 h2 {
-  margin-top: 2em; 
+  margin-top: 2em;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 40px;
+  font-color: #ff0000;
 }
 
 .question {
   display: flex;
   margin-top: 2em;
+  font-size: 25px
 }
   
-.answer-choice img {
+.answer-choice {
+}
+
+img {
   height: 10em;
 }
+
+#gossipgirl {
+  width: 600px;
+  height: 350px;
+}
+
+button {
+  font-size: 25px
+}
+
+button:focus {background-color: #99ff66}
